@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" alt="left-banner-img">
+            <div class="heading">
+                <h1></h1>
+            <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-section">
+
+        <div class="controls" onclick="playaudio()" id="play-pause"><img  class="play-button"src="images/play-button.svg" alt="play-image"></div>
+
+        <audio id="song"></audio>
+
+        <table>
+            <thead>
+                <th class="song-number">#</th>
+                <th class="song-title">Title</th>
+                <th class="song-artist">Artist</th>
+                <th class="song-duration">Duration</th>
+            </thead>
+            <tr id="song1" onclick="playAll(1)">
+                <td>1</td>
+                <td>Adiga Adiga</td>
+                <td>Sid Sriram</td>
+                <td>03:33</td>
+              </tr>
+              <tr id="song2" onclick="playAll(2)">
+                <td>2</td>
+                <td>Chiru Chiru</td>
+                <td>Hari Charan , Tanvi</td>
+                <td>04:44</td>
+              </tr>
+              <tr id="song3" onclick="playAll(3)">
+                <td>3</td>
+                <td>Evare</td>
+                <td>Vijay Yesudas</td>
+                <td>05:10</td>
+              </tr>
+              <tr id="song4" onclick="playAll(4)">
+                <td>4</td>
+                <td>Kanulachatu meghama</td>
+                <td>Aabhas Joshi , Lipsika</td>
+                <td>04:20</td>
+              </tr>
+              <tr id="song5" onclick="playAll(5)">
+                <td>5</td>
+                <td>Kumkumala</td>
+                <td>Sid Sriram</td>
+                <td>04:38</td>
+              </tr>
+              <tr id="song6" onclick="playAll(6)">
+                <td>6</td>
+                <td>Kundanapu Bomma</td>
+                <td>Benny Dayal, Kalyani Menon</td>
+                <td>05:33</td>
+              </tr>
+              <tr id="song7" onclick="playAll(7)">
+                <td>7</td>
+                <td>Nachavule Nachavule</td>
+                <td>B.Ajaneesh Loknath, Karthik</td>
+                <td>03:42</td>
+              </tr>
+              <tr id="song8" onclick="playAll(8)">
+                <td>8</td>
+                <td>Nijame ne chebutnna</td>
+                <td>Sid Sriram</td>
+                <td>03:35</td>
+              </tr>
+              <tr id="song9" onclick="playAll(9)">
+                <td>9</td>
+                <td>Ninnnila Ninnila </td>
+                <td>Armaan Malik</td>
+                <td>03:54</td>
+              </tr>
+              <tr id="song10" onclick="playAll(10)">
+                <td>10</td>
+                <td>Oh Sita</td>
+                <td>SPB Charan, Ramya Behara</td>
+                <td>04:00</td>
+              </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
